@@ -5,17 +5,18 @@ print("Welcom to login page")
 
 Idn = input("User name : ")
 
+if Idn == Id:
+    print("Id is correcte")
+if Idn != Id:
+    print("user name not available")
+    exit()
 print("  ")
 
 Pass = input("Password : ")
 
-if Idn == Id:
-    print("Id is correcte")
 if Pass == Password:
     print("Password is correct")
-if Idn != Id:
-    print("user name not available")
-    exit()
+
 if Pass != Password:
     print("wrong password")
     exit()
@@ -24,7 +25,7 @@ print("Welcome to your account")
 print("   ")
 print("To see your account details press 1")
 print("")
-drt = input("choose")
+drt = input("choose : ")
 if drt == ("1"):
     print("Name = " + Name)
     print("Mobail Number = " + Number)
@@ -33,3 +34,5 @@ if drt == ("1"):
     clear
 
 
+
+   
